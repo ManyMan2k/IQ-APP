@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(lsof -ti:3000)",
+      "Bash(lsof -nP -iTCP:3000 -sTCP:LISTEN)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=1440,3000 --screenshot=/tmp/iq-compare/original-top.png https://www.myiq.com/pt-BR)",
+      "Bash(sips -g pixelWidth -g pixelHeight original-top.png)",
+      "Bash(sips -Z 1200 original-top.png --out original-top-sm.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight original-top-sm.png)",
+      "Bash(sips -s format jpeg -Z 1200 original-top.png --out original-top.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight -g format original-top.jpg)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --dump-dom https://www.myiq.com/pt-BR)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --dump-dom http://localhost:3000/pt/start)"
+    ]
+  }
+}
