@@ -411,7 +411,7 @@ export default function StartPage() {
       </section>
 
       {/* ── 10. COMUNIDADE ── */}
-      <section className="relative z-0 flex flex-col items-center justify-between gap-6 py-10 md:flex-row md:py-16 mx-auto max-w-7xl px-4 md:px-6">
+      <section className="relative z-0 overflow-hidden flex flex-col items-center justify-between gap-6 py-10 md:flex-row md:py-16 mx-auto max-w-7xl px-4 md:px-6">
         <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-full w-[200vw] -translate-x-1/2 bg-[#F6FBFF]" />
         
         <div className="flex flex-col items-center justify-center gap-2 md:items-start">
