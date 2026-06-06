@@ -191,7 +191,7 @@ export default function StartPage() {
       <Navbar onLogin={openCheckout} onStart={beginQuiz} />
 
       {/* ── 2. HERO SECTION ── */}
-      <section className="relative z-0 flex h-full w-full flex-col pt-14 lg:pt-[84px]">
+      <section className="relative z-0 flex h-full w-full flex-col overflow-hidden pt-14 lg:pt-[84px]">
         {/* Background gradient */}
         <div className="absolute -left-1/2 top-0 z-[-1] h-full w-[200vw] bg-gradient-to-b from-white via-[#EBF4FF] to-white" />
 
@@ -226,7 +226,7 @@ export default function StartPage() {
           </div>
 
           {/* Right column: bell curve SVG */}
-          <div className="relative mx-auto flex aspect-[517/296] h-full w-full max-w-[517px] items-center justify-center max-lg:mt-[-28px]">
+          <div className="relative mx-auto flex aspect-[517/296] h-full w-full max-w-[95vw] items-center justify-center lg:max-w-[517px] max-lg:mt-[-28px]">
             <BellCurveSVG />
           </div>
         </div>
